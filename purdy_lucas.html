@@ -1,5 +1,7 @@
 <script src="http://peterolson.github.com/BigInteger.js/BigInteger.min.js"></script>
 
+<p id="textelement">Be Patient</p>
+
 <script>
 	var numDigits = parseInt(window.prompt("How many digits?"));
 	var count = 3;
@@ -15,5 +17,5 @@
 		c = a.plus(b);
 		count++;
 	}
-	window.alert("Answer:" + count);
+	document.getElementById("textelement").innerHTML = "The Lucas number at index " + count + " has " + numDigits + " digits!";
 </script>
