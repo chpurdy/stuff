@@ -1,0 +1,19 @@
+<script src="http://peterolson.github.com/BigInteger.js/BigInteger.min.js"></script>
+
+<script>
+	var numDigits = parseInt(window.prompt("How many digits?"));
+	var count = 3;
+	//var bigInt = require("big-integer");
+	var a = bigInt(2);
+	var b = bigInt(1);
+	var c = a.plus(b);
+	console.log(c.toString());
+	console.log(c.toString().length);
+	while (numDigits > c.toString().length) {
+		a = b;
+		b = c ;
+		c = a.plus(b);
+		count++;
+	}
+	window.alert("Answer:" + count);
+</script>
